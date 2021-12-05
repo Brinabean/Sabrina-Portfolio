@@ -85,10 +85,10 @@ header nav ul li a:hover {
     font-size: 50px;
     margin: 10px 0 35px 50px;
     width: 50%;
-    border-right: 3px solid;
     padding-bottom: 20px;
     display: flex;
     color: var(--color1);
+    border-right: 3px solid;
 }
 
 .statement {
@@ -97,4 +97,33 @@ header nav ul li a:hover {
 }
 .text-left {
     text-align: left;
+}
+
+/*end About me section/
+
+/*my work section*/
+.work img {
+    width: 10;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--color1);
+}
+.contact {
+    margin: 7px 0;
+}
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
