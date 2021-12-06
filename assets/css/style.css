@@ -1,6 +1,8 @@
 :root {
     --color1: #000000;
     --color2: #e987e9;
+    --color3: #024586;
+    --color4:  #042b5e;
 }
 
 * {
@@ -10,9 +12,23 @@
 }
 
 body {
-    color: var(--color2); 
+    color: var(--color1); 
     font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--color3);
 }
+
+.title {
+    font-size: 50px;
+    margin: 10px 5px 35px 100px;
+    width: auto;
+    /*padding-bottom: 20px;*/
+    color: var(--color1);
+    border-right: 3px solid;
+    display: flex;
+    /*padding-right: 20px;*/
+    padding: 20px 20px 20px 20px;
+}
+
 
 /*Header Section*/
 header {
@@ -23,9 +39,10 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("../images/blue.jpg");
+    background-image: url("../images/blue-background.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: 80%;
     z-index: 9999;
 }
 
@@ -68,27 +85,33 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-/*header h2 {
-   
-}*/
 /*End of header section*/
+
+/*BEGIN HERO STYLING*/
+.hero {
+    background-image: url("../images/blue-background.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: 80%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+}
+.hero h2 {
+    display: flex;
+    position: relative;
+    color: var(--color2);
+    bottom: 0px;
+    padding: 50px;
+}
+/*END HERO STYLING*/
 
 /*About Me Section*/
 
 .bio {
     display: flex;
-    color: var(--color1);
     margin-top: 50px;
-}
-
-.title {
-    font-size: 50px;
-    margin: 10px 0 35px 50px;
-    width: 50%;
-    padding-bottom: 20px;
-    display: flex;
-    color: var(--color1);
-    border-right: 3px solid;
 }
 
 .statement {
@@ -102,8 +125,51 @@ header nav ul li a:hover {
 /*end About me section/
 
 /*my work section*/
-.work img {
-    width: 10;
+.work {
+    display: flex;
+    margin-top: 50px;
+}
+
+.bottom-left {
+    position: relative;
+    bottom: 50px;
+    left: 2px;
+    text-align: left;
+    background: var(--color1);
+    width: 90px;
+    color: var(--color2);
+    border-radius: 0 15px 0 0;
+}
+.main-img:hover {
+    opacity: 0.5;
+}
+
+.main-img img {
+    margin: 10px auto;
+    max-width: 700;
+    border: 3px var(--color1) solid;
+}
+
+.image2:hover {
+    opacity: 0.5;
+}
+.image2 img {
+    margin: 10px auto;
+    width: 350;
+    height: 300;
+    border: 3px var(--color1) solid;
+}
+
+.image3:hover {
+    opacity: 0.5;
+}
+
+.image3 img {
+    background: white;
+    margin: 10px auto;
+    width: 350;
+    height: 300;
+    border: 3px var(--color1) solid;
 }
 
 .contact a {
@@ -111,7 +177,7 @@ header nav ul li a:hover {
     color: var(--color1);
 }
 .contact {
-    margin: 7px 0;
+    margin: 30px 0 30px auto;
 }
 
 .contact ul {
