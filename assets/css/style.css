@@ -104,6 +104,7 @@ header nav ul li a:hover {
     color: var(--color2);
     bottom: 0px;
     padding: 50px;
+    margin-left: auto;
 }
 /*END HERO STYLING*/
 
@@ -139,6 +140,7 @@ header nav ul li a:hover {
     width: 90px;
     color: var(--color2);
     border-radius: 0 15px 0 0;
+    appearance: none;
 }
 .main-img:hover {
     opacity: 0.5;
@@ -147,6 +149,16 @@ header nav ul li a:hover {
 .main-img img {
     margin: 10px auto;
     max-width: 700;
+    border: 3px var(--color1) solid;
+}
+
+.image1:hover {
+    opacity: 0.5;
+}
+.image1 img {
+    margin: 10px auto;
+    width: 350;
+    height: 300;
     border: 3px var(--color1) solid;
 }
 
